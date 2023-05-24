@@ -15,8 +15,8 @@ $mail = new PHPMailer(true);
 		$mail -> SMTPSecure		= "ssl";
 		$mail -> SMTPAuth		= true;
 		$mail -> Port			= 465;
-		$mail -> Username		= "gaadm.universe@gmail.com"; //email pengirim
-		$mail -> Password		= "Astra123"; //password email pengirim
+		$mail -> Username		= ""; //email pengirim
+		$mail -> Password		= ""; //password email pengirim
 		////$mail -> AddAddress ('brian.mewal@daihatsu.astra.co.id', 'Brian'); //email tujuan1
 		//$mail -> AddAddress ('ronald.adiyanto@daihatsu.astra.co.id', 'Ronald Ariyanto'); //email tujuan1		
 //$mail -> AddAddress ('gengen.gumilar@daihatsu.astra.co.id', 'Gengen Gumilar'); //email tujuan2
@@ -94,7 +94,7 @@ $mail = new PHPMailer(true);
 		$messageclose			= "Email ini terkirim secara otomatis melalui LCS, mohon untuk tidak me-reply email ini.";
 		$footmessage			= "2018. All Right Reserved | License Control System";
 		
-		$mail -> SetFrom ('gaadm.universe@gmail.com', 'Licenses Control System'); //email pengirim
+		$mail -> SetFrom ('', 'Licenses Control System'); //email pengirim
 		$mail -> Subject		= "LCS Information [NO REPLY]";
 		$mail -> MsgHtml ('<p><b>'.$headmessage.'</b><br><br>'.$message2.'<br>'.$body.'<br>'.$messageclose.'<br><br><font size="2" style="italic">&copy;'.$footmessage.'</font></p>');
 		$mail -> Send();
